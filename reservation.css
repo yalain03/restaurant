@@ -1,0 +1,80 @@
+/*
+CSS for the reservation page
+*/
+/* 
+    Created on : Jun 24, 2016, 8:46:28 AM
+    Author     : yves a.
+*/
+
+body {
+    font-family: "Roboto Slab" "Helvetica Neue" Helvetica Arial sans-serif;
+}
+
+.navbar-brand {
+    font-family:"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+}
+
+a {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.justified {
+    position: absolute;
+    left: 45%;
+}
+
+header {
+    height: 700px;
+    background-image: url(images/restaurant.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+form {
+    position: relative;
+    top: 120px;
+}
+
+.margined {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    
+    100% {
+        opacity: 100%;
+        -webikit-transform: translateY(0%);
+    }
+}
+
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    
+    100% {
+        opacity: 100%;
+        -webikit-transform: translateY(0%);
+    }
+}
+

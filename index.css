@@ -1,0 +1,128 @@
+/*
+CSS for the main page
+*/
+/* 
+    Created on : Jun 23, 2016, 1:05:49 PM
+    Author     : yves a.
+*/
+
+@font-face {
+    font-family: fontAwesome;
+    src: url(fonts/fontawesome-webfont.woff),
+        url(fonts/fontawesome-webfont.ttf),
+        url(fonts/fontawesome-webfont.eof);    
+    font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+body {
+    font-family: "Roboto Slab" "Helvetica Neue" Helvetica Arial sans-serif;
+}
+
+.navbar-brand {
+    font-family:"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #f9e17e;
+}
+
+a {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+header {
+    background-image: url(images/head-back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px; 
+}
+
+.justified {
+    position: absolute;
+    left: 45%;
+}
+
+.intro-lead-in {
+    position: relative;
+    top: 400px;
+    left: 200px;
+    color: #FF6F00;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    line-height: 4em;  
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.intro-heading {
+    position: relative;
+    top: 350px;
+    left: 250px;
+    color: #FF6F00;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    line-height: 4em;  
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: none;
+}
+
+.thumbnail img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.team-member img {
+    margin: 0 auto;
+}
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    
+    100% {
+        opacity: 100%;
+        -webikit-transform: translateY(0%);
+    }
+}
+
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    
+    100% {
+        opacity: 100%;
+        -webikit-transform: translateY(0%);
+    }
+}
